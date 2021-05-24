@@ -1,0 +1,74 @@
+#main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color:azure;
+}
+#container {
+    background-color: black;
+    border: 10px solid black;
+    display: grid;
+    grid-template-rows: 120px 80px 80px 80px 80px 80px;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 2%;
+}
+#history {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+
+body {
+    margin: auto;
+    justify-content: center;
+}
+
+#result {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em !important;
+    text-align: right;
+    padding-top: 25px;
+    overflow: hidden;
+    display: grid;
+    grid-column: 1 / -1;
+    font-size: 30px;
+    background-color: lightgray;
+    border: 5px solid black;
+}
+
+#title{
+    text-align: center;
+}
+
+#zero{
+    grid-column: 1 / 3;
+}
+
+button {
+    font-size: 25px;
+    border-radius: 10%;
+}
+button:hover{
+    opacity: 90%;
+}
+
+.operand, .decimal {
+    background-color: #217C7E;
+    font-family: 'Courier New', Courier, monospace;
+}
+.operator, .equals {
+    background-color: orange;
+}
+.clear, .sign, .back{
+    background-color: dodgerblue;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#foot{
+    text-align: center;
+}
